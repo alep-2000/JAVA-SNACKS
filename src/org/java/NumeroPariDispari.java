@@ -11,5 +11,11 @@ public class NumeroPariDispari {
 		int intNumber = Integer.valueOf(strNumber);
 		
 		in.close();
+		
+		if(intNumber %2 == 0) {
+			System.out.println("Il numero è pari: " + intNumber);
+		}else {
+			System.out.println("Il numero è dispari, stampo il numero successivo: " + (intNumber + 1));
+		}
 	}
 }
