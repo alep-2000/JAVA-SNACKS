@@ -8,7 +8,29 @@ public class StringaPalindroma {
 		
 		System.out.print("Inserisci una stringa:");
 		String strWord = in.nextLine();
+		int strLength = strWord.length();
 		
 		in.close();
+		
+		String strReverse = "";
+
+
+		for (int i = strLength - 1; i >= 0; i--) {
+
+			char c = strWord.charAt(i);
+
+			strReverse += c;
+		}
+
+
+		if (strWord.equals(strReverse)) {
+
+			System.out.println("Questa parola è Palindroma!");
+
+		} else {
+
+			System.out.println("Questa parola NON è Palindroma!");
+		}
+		
 	}
 }
