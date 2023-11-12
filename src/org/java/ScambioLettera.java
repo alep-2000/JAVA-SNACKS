@@ -8,5 +8,18 @@ public class ScambioLettera {
 		
 		String swapStr = "";
 		
+		for(int i=0; i<strLenght; i++){
+			
+			char currentChar = str1.charAt(i);
+			if(currentChar == 'a'){
+				currentChar = 'o';
+			}else if(currentChar == 'o'){
+				currentChar = 'a';
+			}
+			
+			swapStr += currentChar;
+		}
+		
+		System.out.println("Parola modificata: " + swapStr);
 	}
 }
