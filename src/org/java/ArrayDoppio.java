@@ -29,5 +29,25 @@ public class ArrayDoppio {
 				Dispari++;
 			}
 		}
+		
+		
+		System.out.print("Pari: [");
+        for (int i = 0; i < numeriPari.length; i++) {
+            System.out.print(numeriPari[i]);
+            if (i < numeriPari.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
+
+        System.out.print("Dispari: [");
+        for (int i = 0; i < numeriDispari.length; i++) {
+            System.out.print(numeriDispari[i]);
+            if (i < numeriDispari.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
+
     }
 }
