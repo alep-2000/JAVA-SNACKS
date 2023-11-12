@@ -7,13 +7,24 @@ public class SommaValori {
 		Scanner in = new Scanner(System.in);
 		
 		System.out.print("Inserisci il primo valore:");
-		String strValue1 = in.nextLine();
+		int intValue1 = in.nextInt();
 		
 		System.out.print("Inserisci il secondo valore:");
-		String strValue2 = in.nextLine();
+		int intValue2 = in.nextInt();
 
 		in.close();
 		
-		System.out.println("Primo valore: " + strValue1 + "\n" + "Secondo valore " + strValue2);
+		if (intValue1 > intValue2) {
+            int temp = intValue1;
+            intValue1 = intValue2;
+            intValue2 = temp;
+        }
+
+        int somma = 0;
+        for (int i = intValue1; i <= intValue2; i++) {
+            somma += i;
+        }
+		
+		System.out.println("Primo valore: " + intValue1 + "\n" + "Secondo valore " + intValue2 + "\n" + "Somma dei valori: " + somma);
 	}
 }
