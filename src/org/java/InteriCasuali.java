@@ -40,5 +40,18 @@ public class InteriCasuali {
 		}
 
 		System.out.println("\nNumero minimo: " + numeroMinimo);
+		
+		double avg = 0;
+
+		for (int i = 0; i < array.length; i++) {
+
+			int number = array[i];
+
+			avg += number;
+		}
+
+		avg /= array.length;
+
+		System.out.println("\nValore medio: " + avg);
 	}
 }
