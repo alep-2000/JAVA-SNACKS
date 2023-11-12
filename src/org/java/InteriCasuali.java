@@ -26,5 +26,19 @@ public class InteriCasuali {
 		}
 
 		System.out.println("\nNumero massimo: " + numeroMassimo);
+		
+		int numeroMinimo = Integer.MAX_VALUE;
+
+		for (int i = 0; i < array.length; i++) {
+
+			int number = array[i];
+
+			if (number < numeroMinimo) {
+
+				numeroMinimo = number;
+			}
+		}
+
+		System.out.println("\nNumero minimo: " + numeroMinimo);
 	}
 }
