@@ -14,5 +14,20 @@ public class ArrayDoppio {
             }
         }
 		
+        int[] numeriPari = new int[countPari];
+        int[] numeriDispari = new int[countDispari];
+		
+		int Pari = 0;
+		int Dispari = 0;
+		
+		for(int numero : numeri) {
+			if(numero % 2 == 0) {
+				numeriPari[Pari] = numero;
+				Pari++;
+			}else {
+				numeriDispari[Dispari] = numero;
+				Dispari++;
+			}
+		}
     }
 }
